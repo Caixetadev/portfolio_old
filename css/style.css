@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@400;900&display=swap");
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -18,8 +19,13 @@ body {
 }
 
 /* =============== Menu =============== */
-.bg {
-  background-color: #232323;
+.fixed {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #232323;
+  z-index: 1;
 }
 
 #header {
@@ -33,6 +39,7 @@ body {
 }
 
 #logo {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
   color: #5270c1;
@@ -173,7 +180,22 @@ body {
   visibility: hidden;
 }
 
-/* =============== Introducao =============== */
+/* =============== Social =============== */
+.social {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.social a {
+  color: #4961dc;
+  margin-right: 20px;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+/* =============== BoxArrow =============== */
 .box {
   position: absolute;
   top: 90%;
@@ -213,6 +235,26 @@ body {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
   }
+}
+
+/* =============== ButtonToTop =============== */
+#btnTop {
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  border: 0;
+  right: 30px;
+  height: 32px;
+  width: 32px;
+  background: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+  border-radius: 50%;
+  display: none;
+}
+
+#btnTop img {
+  color: #fff;
+  width: 14px;
+  margin: 0 auto;
 }
 
 /* =============== Mobile =============== */
@@ -306,4 +348,17 @@ body {
   .about {
     padding: 10px 20px;
   }
+
+  .foto {
+    visibility: hidden;
+  }
+}
+
+.foto {
+   position: absolute;
+  top: 150px;
+  right: 110px;
+  width: 400px;
+  height: 400px;
+  display: flex;
 }

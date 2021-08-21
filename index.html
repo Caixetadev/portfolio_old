@@ -5,38 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Caixeta - Dev</title>
+    <title>Rafael Caixeta | Front-end Developer</title>
 </head>
 <style>
- ::-webkit-scrollbar{width:8px;}/*!sc*/
-::-webkit-scrollbar-track{background:#232323;}/*!sc*/
-::-webkit-scrollbar-thumb{ background: #5270c1;border-radius:10px;}/*!sc*/
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #232323;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #5270c1;
+        border-radius: 10px;
+    }
 </style>
 
 <body>
-    <div class="bg">
+    <div class="fixed">
         <header id="header">
             <a id="logo" href="#home">Caixetadev</a>
             <nav id="nav">
                 <button id="btn-mobile"><span id="hamburger"></span>
                 </button>
                 <ul id="menu">
-                    <li><a href="#" class="on">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="on">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-    <section class="introducao">
+    <section class="introducao" id="home">
         <div class="introducao_info">
             <span>Hello, I'm</span>
             <h1>Rafael Caixeta</h1>
             <p>FRONT-END WEB DEVELOPER</p>
+            <div class="social">
+                <a href="https://github.com/Caixetadev" target="_blank"><i class="fa fa-github"
+                        style="font-size: 25px;"></i></a>
+                <a href="https://www.linkedin.com/in/rafael-caixeta-05402b217/" target="_blank">
+                    <i class="fa fa-linkedin" style="font-size: 25px;"></i></a>
+                <a href="https://www.instagram.com/caixetadev/" target="_blank"><i class="fa fa-instagram"
+                        style="font-size: 25px"></i></a>
+            </div>
             <a href="#portfolio" class="button">Portfolio</a>
             <a href="#about" class="button about">About</a>
+        </div>
+        <div class="foto">
+            <img src="https://uploads-ssl.webflow.com/5b9280590ade594f7c638df5/5bc9e0c8eae49f57f47181c1_content.svg"
+                alt="">
         </div>
         <div class="box">
             <span></span>
@@ -45,14 +67,44 @@
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container" id="about">
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
+            <h1>About Me</h1>
             <h1>About Me</h1>
         </div>
 
     </section>
+    <!-- Botao voltar ao topo -->
+    <button onclick="backToTop()" id="btnTop"><img src="./img/backup.svg" alt=""></button>
 
 
     <script src="./js/index.js"></script>
+    <script src="./js/buttontop.js"></script>
 </body>
 
 </html>
