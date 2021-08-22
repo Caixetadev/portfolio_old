@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@400;900&display=swap");
 
 * {
-  scroll-behavior: smooth;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
+
 ul {
   list-style-type: none;
 }
@@ -65,13 +66,19 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.on {
-  color: #4961dc !important;
-  border-bottom: 1px solid #4961dc;
-}
-
 #menu a:hover {
   color: #4961dc;
+}
+
+#nav ul li:nth-child(1)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #4961dc;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.5s;
 }
 
 #nav ul li:nth-child(2)::after {
@@ -102,6 +109,17 @@ body {
   position: absolute;
   left: 0;
   bottom: -10px;
+  transition: 0.5s;
+}
+
+#nav ul li:nth-child(5)::after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #4961dc;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
   transition: 0.5s;
 }
 
@@ -237,6 +255,94 @@ body {
   }
 }
 
+/* =============== AboutMe =============== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+}
+
+.bg {
+  background-color: #232323;
+  width: 100%;
+  height: 400px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.container p {
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+/* =============== Skills =============== */
+.container {
+  width: 80%;
+  height: 400px;
+  margin-bottom: 100px;
+}
+
+#skill .container h2 {
+  margin-bottom: 100px;
+}
+
+.svgs {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* =============== Portfolio =============== */
+.portfolio .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio h2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.bg_portfolio h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.container p a {
+  color: #4961dc;
+  text-decoration: underline;
+}
+
+.bg_portfolio {
+  background-color: #232323;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+.bg_portfolio .container p {
+  max-width: 480px;
+}
+
+.bg_portfolio img {
+  width: 540px;
+  height: 300px;
+}
+
 /* =============== ButtonToTop =============== */
 #btnTop {
   cursor: pointer;
@@ -257,7 +363,110 @@ body {
   margin: 0 auto;
 }
 
+/* =============== Scroll =============== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5270c1;
+  border-radius: 10px;
+}
+
+/* =============== contact =============== */
+.container-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-contact h2{
+  margin-bottom: 20px;
+}
+
+.container-contact p {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 400px;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+}
+
+.container-contact a {
+  margin-bottom: 100px;
+}
+
+address a {
+  color: #0044ff;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+/* =============== Footer =============== */
+.container-footer {
+  background-color: #232323;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-footer .social {
+  margin: 0;
+}
+.footer p {
+  color: #fff;
+  font-family: "Karla", sans-serif;
+}
+
 /* =============== Mobile =============== */
+@media (max-width: 800px) {
+  .foto img {
+    right: 40px !important;
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .introducao_info h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .button,
+  .about {
+    padding: 10px 40px;
+  }
+
+  /* .bg_portfolio .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container p {
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .bg_portfolio img {
+    width: 300px;
+    height: 200px;
+ 
+  } */
+
+}
+
+
+
 @media (max-width: 600px) {
   #nav ul {
     display: block;
@@ -273,10 +482,48 @@ body {
     overflow-y: hidden;
   }
 
+  #skill .container h2 {
+    margin-bottom: 70px;
+  }
+
+  .container-contact p {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+
+  .container {
+    margin-bottom: 10px;
+  }
+
+  .svgs img {
+    width: 60px;
+  }
+
+  .container p {
+    line-height: 24px;
+  }
+
+  .portfolio .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bg_portfolio img {
+    width: 278px;
+    height: 157px;
+  }
+
+  .bg_portfolio .container p {
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+  }
+
   #nav.active #menu {
     height: calc(100vh - 60px);
     visibility: visible;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   #menu li {
@@ -354,8 +601,31 @@ body {
   }
 }
 
-.foto {
-   position: absolute;
+@media (min-width: 1024px) {
+  .foto img {
+    right: 10px;
+    width: 350px;
+    height: 350px;
+  }
+
+  /* .bg_portfolio .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bg_portfolio .container p {
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  .bg_portfolio .container img {
+    width: 350px;
+  }*/
+} 
+
+.foto img {
+  position: absolute;
   top: 150px;
   right: 110px;
   width: 400px;
