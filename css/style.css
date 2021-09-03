@@ -339,6 +339,10 @@ h2 {
   max-width: 480px;
 }
 
+.container .projeto {
+  display: block
+}
+
 .bg_portfolio img {
   width: 540px;
   height: 300px;
@@ -517,7 +521,7 @@ address a:hover {
 
   .bg_portfolio .container p {
     text-align: center;
-    line-height: 16px;
+    line-height: 24px;
     font-size: 14px;
   }
 
