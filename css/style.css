@@ -269,11 +269,36 @@ body {
   height: 400px;
 }
 
+#about h2 {
+  width: 170px;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 900;
   color: #fff;
+  padding-bottom: 7px;
+}
+
+#about h2::before, #skill h2::before, .container-contact h2::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  background-color: #353535;
+  height: 2px;
+  bottom: 0;
+}
+
+#about h2::after, #skill h2::after, .container-contact h2::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 70%;
+  background-color: #4961dc;
+  height: 2px;
+  bottom: 0;
 }
 
 .container p {
@@ -285,7 +310,7 @@ h2 {
 }
 
 /* =============== Skills =============== */
-.container {
+ .container {
   width: 80%;
   height: 400px;
   margin-bottom: 100px;
@@ -293,12 +318,13 @@ h2 {
 
 #skill .container h2 {
   margin-bottom: 100px;
+  width: 150px;
 }
 
 .svgs {
   display: flex;
   justify-content: space-around;
-}
+} 
 
 /* =============== Portfolio =============== */
 .portfolio .container {
@@ -310,7 +336,27 @@ h2 {
 .portfolio h2 {
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.portfolio h2::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 14%;
+  background-color: #353535;
+  height: 2px;
+  bottom: 0;
+}
+
+.portfolio h2::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 10%;
+  background-color: #4961dc;
+  height: 2px;
+  bottom: 0;
 }
 
 .bg_portfolio h3 {
@@ -392,6 +438,26 @@ h2 {
 
 .container-contact h2{
   margin-bottom: 20px;
+}
+
+.container-contact h2::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  background-color: #353535;
+  height: 2px;
+  bottom: 0;
+}
+
+.container-contact h2::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 70%;
+  background-color: #4961dc;
+  height: 2px;
+  bottom: 0;
 }
 
 .container-contact p {
@@ -512,6 +578,26 @@ address a:hover {
   .portfolio .container {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .portfolio h2::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 50%;
+    background-color: #353535;
+    height: 2px;
+    bottom: 0;
+  }
+  
+  .portfolio h2::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 35%;
+    background-color: #4961dc;
+    height: 2px;
+    bottom: 0;
   }
 
   .bg_portfolio img {
