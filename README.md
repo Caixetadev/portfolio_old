@@ -22,7 +22,7 @@
 
 ---
 ### ✨ Final Project
-> GitPage: https://caixetadev.github.io/Portfolio/
+> GitPage: https://caixetadev.github.io/portfolio/
 <p align="center">
   <img src="https://github.com/Caixetadev/Portfolio/blob/main/img/home.png?raw=true" alt="Devfinance" />
 </p>
